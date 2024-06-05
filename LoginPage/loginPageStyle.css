@@ -21,7 +21,7 @@ body a:hover {
 
 div.login-side{
     padding: 0 10%;
-    min-width: 30em;
+    min-width: 25em;
 }
 
 div.login-side div.login-side-container {
@@ -79,7 +79,6 @@ div.input-containers input {
 }
 
 div.logged-container {
-
     display: flex;
     align-items: center;
 }
@@ -110,12 +109,7 @@ div.logged-container span {
 div.signup-container {
     padding-bottom: 40px;
     margin: 0 auto;
-}
-
-.sugestion-side{
-    background-color: #4E60FF;
-    height: 100vh;
-    width: 100%;
+    text-align: center;
 }
 
 #forgot-link {
@@ -125,3 +119,69 @@ div.signup-container {
     margin: 0 auto;
 }
 
+.sugestion-side{
+    background-color: #697BFF;
+    height: 100vh;
+    width: 100%;
+}
+
+.sugestion-side-container {
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sugestion-side-container img {
+    width: 90%;
+    min-width: 500px;
+    max-width: 750px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sugestions {
+    text-align: center;
+    width: 60%;
+    font-size: 1.2em;
+}
+
+.carousel-circels-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-circels {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    opacity: 30%;
+}
+
+#full-circle {
+    opacity: 100%;
+}
+
+@media (max-width: 1200px) {
+    .sugestion-side{
+        display: none;
+    }
+
+    .login-side {
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 2em;
+    }
+
+    .sigestion-side-container {
+
+    }
+}
