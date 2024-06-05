@@ -34,7 +34,7 @@ div.login-side div.login-side-container {
 
 }
 
-div.login-side div div.icon-container {
+.login-side div div.icon-container {
     width: 79px;
     position: relative;
     top: 20px;

@@ -1,0 +1,168 @@
+* {
+    font-family: Nunito, sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    margin-bottom: 40px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-bottom: 1px solid #EDEEF2;
+    padding-bottom: 10px;
+}
+
+.left-side-navbar {
+    display: flex;
+    margin-left: 220px;
+    align-items: center;
+    gap: 50px;
+}
+
+.icon-container {
+    width: 79px;
+    position: relative;
+    top: 5px;
+}
+
+.icon {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.icon-blue {
+    position: relative;
+    bottom: 10px;
+    color: #4E60FF;
+}
+
+.search-input-container {
+    background-color: #EDEEF2;
+    width: 200px;
+    display: flex;
+    border-radius: 16px;
+}
+
+.left-side-navbar div input {
+    width: 73%;
+    height: 2em;
+    border-radius: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+}
+
+.search-input-container a {
+    background-color: #f7f8fb;
+    border-radius: 50%;
+    width: 1.8em;
+    height: 1.8em;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+.search-input-container  a img{
+    height: 1.3em;
+    width: 1.3em;
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.left-side-navbar div input:focus {
+    outline: none;
+}
+
+.right-side-navbar {
+    display: flex;
+    margin-right: 220px;
+    margin-left: 10px;
+    align-items: center;
+    gap: 20px;
+}
+
+.divider {
+    height: 100%;
+    width: 2px;
+    background-color: #EDEEF2;
+}
+
+div.cart-button img {
+    height: 2em;
+    position: relative;
+    top: 10px;
+    left: 12px;
+}
+
+.cart-button {
+    height: 56px;
+    width: 56px;
+    background-color: #F3F4FF;
+    border-radius: 16px;
+    border: 1px solid #d8d8d8;
+}
+
+.profile-button {
+    overflow: clip;
+    height: 56px;
+    width: 56px;
+    border-radius: 16px;
+    border: 1px solid #bcbcbc;
+
+}
+
+div.profile-button img {
+    overflow: hidden;
+    width: 100px;
+    height: auto;
+    border-radius: 16px;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 80%;
+}
+
+.discount-container {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.left-image-discount {
+    margin-left: 30px;
+    border-radius: 16px;
+    border: 1px solid #efefef;
+    width: 45%;
+    height: auto;
+}
+
+.right-image-discount {
+    margin-right: 30px;
+    border-radius: 16px;
+    border: 1px solid #efefef;
+    width: 45%;
+    height: auto    ;
+}
