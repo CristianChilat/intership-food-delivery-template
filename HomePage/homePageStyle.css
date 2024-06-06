@@ -227,6 +227,11 @@ div.food-category a img {
     margin-top: 25px;
 }
 
+.menu-options:hover {
+    opacity: 85%;
+    cursor: pointer;
+}
+
 .menu-options {
     width: 350px;
     height: 280px;
