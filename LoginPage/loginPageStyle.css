@@ -3,7 +3,7 @@
     font-size: 1em;
 }
 
-body{
+body {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
@@ -20,25 +20,22 @@ body a:hover {
     opacity: 0.75;
 }
 
-div.login-side{
+div.login-side {
     padding: 0 10%;
     min-width: 25em;
 }
 
 div.login-side div.login-side-container {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
 }
 
 .login-side div div.icon-container {
     width: 79px;
     position: relative;
     top: 20px;
-
 }
 
 .icon {
@@ -61,22 +58,23 @@ div.login-side div.login-side-container {
     margin: 0;
 }
 
-.input-containers {
+.input-container {
     width: 100%;
     height: 100%;
     margin-bottom: 1em;
 }
 
-.inputs-container {
+.pesonal-data-input-containers {
     margin-bottom: 1em;
 }
 
-div.input-containers input {
+div.input-container input {
     width: 100%;
     height: 40px;
     border-radius: 8px;
     border: 1px solid #C7C8D2;
     padding-left: 10px;
+    margin-top: 4px;
 }
 
 .login-instruction {
@@ -94,9 +92,9 @@ div.logged-container input {
     width: 1.5em;
 }
 
-div.logged-container span {
-    margin-left: 10px;
-    font-size: 1.3em;
+div.logged-container label {
+    margin-left: 12px;
+    font-size: 1.1em;
 }
 
 .login-button {
@@ -111,6 +109,7 @@ div.logged-container span {
 
 .login-button:hover {
     background-color: #3946c6;
+    box-shadow: 2px 2px 4px black;
 }
 
 div.signup-container {
@@ -126,13 +125,13 @@ div.signup-container {
     margin: 0 auto;
 }
 
-.sugestion-side{
-    background-color: #697BFF;
+.suggestion-side {
+    background-color: #6477ff;
     min-height: 100vh;
     width: 100%;
 }
 
-.sugestion-side-container {
+.suggestion-side-container {
     color: white;
     align-items: center;
     display: flex;
@@ -141,7 +140,7 @@ div.signup-container {
     min-height: 250px;
 }
 
-.sugestion-side-container img {
+.suggestion-side-container img {
     width: 90%;
     min-width: 500px;
     max-width: 750px;
@@ -149,17 +148,17 @@ div.signup-container {
     margin-bottom: 50px;
 }
 
-.sugestion-label{
+.suggestion-label {
     font-size: 2em;
 }
 
-.sugestions {
+.suggestions {
     text-align: center;
     width: 60%;
     font-size: 1.2em;
 }
 
-.carousel-circels-container {
+.carousel-circles-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -168,7 +167,7 @@ div.signup-container {
     margin-right: auto;
 }
 
-.carousel-circels {
+.carousel-circle {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -182,14 +181,13 @@ div.signup-container {
 }
 
 
-
 /* Responsivity */
 @media (max-width: 1200px) {
     * {
         font-size: 1.1em;
     }
 
-    .sugestion-side{
+    .suggestion-side {
         display: none;
     }
 
@@ -201,15 +199,15 @@ div.signup-container {
         font-size: 2em;
     }
 
-    .input-containers {
+    .input-container {
         margin-bottom: 1em;
     }
 
-    .input-containers input#email {
+    .input-container input#email {
         height: 2.6em;
     }
 
-    .input-containers input#password {
+    .input-container input#password {
         height: 2.6em;
     }
 
@@ -221,7 +219,7 @@ div.signup-container {
         font-size: 1.3em;
     }
 
-    .inputs-container {
+    .personal-data-input-containers {
         margin-bottom: 70px;
     }
 
