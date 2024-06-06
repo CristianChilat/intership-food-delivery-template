@@ -65,7 +65,7 @@ div.login-side div.login-side-container {
     margin-bottom: 1em;
 }
 
-.pesonal-data-input-containers {
+.personal-data-input-containers {
     margin-bottom: 1em;
 }
 
@@ -83,17 +83,17 @@ div.input-container input {
     margin-top: 16px;
 }
 
-div.logged-container {
+div.remember-me {
     display: flex;
     align-items: center;
 }
 
-div.logged-container input {
+div.remember-me input {
     height: 1.5em;
     width: 1.5em;
 }
 
-div.logged-container label {
+div.remember-me label {
     margin-left: 12px;
     font-size: 1.1em;
 }
@@ -111,6 +111,7 @@ div.logged-container label {
 .login-button:hover {
     background-color: #3946c6;
     box-shadow: 2px 2px 4px black;
+    cursor: pointer;
 }
 
 div.signup-container {
@@ -224,7 +225,7 @@ div.signup-container {
         margin-bottom: 70px;
     }
 
-    .logged-container label {
+    .remember-me label {
         font-size: 1.2em;
         margin: 1em;
     }
