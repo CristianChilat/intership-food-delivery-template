@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+main {
+    width: 95%;
+}
+
 nav {
     margin-bottom: 40px;
 }
@@ -63,11 +67,11 @@ nav {
     width: 1.8em;
     height: 1.8em;
     position: relative;
-    top: 3px;
-    left: 5px;
+    top: 2px;
+    left: 10px;
 }
 
-.search-input-container  a img{
+.search-input-container  a img {
     height: 1.3em;
     width: 1.3em;
     position: relative;
@@ -139,10 +143,15 @@ a:hover {
 main {
     display: flex;
     justify-content: center;
+    min-width: 1170px;
 }
 
 section {
     width: 80%;
+    min-width: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .discount-container {
@@ -162,7 +171,122 @@ section {
 .right-image-discount {
     margin-right: 30px;
     border-radius: 16px;
-    border: 1px solid #efefef;
+    border: 1px solid #eaeaea;
     width: 45%;
     height: auto    ;
+}
+
+.food-category-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.food-category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.food-category  a {
+    min-width: 130px;
+    width: 95%;
+    height: 80px;
+    border: 1px solid #EDEEF2;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.food-category a:hover {
+    background-color: #F8F9FF;
+    border: 1px solid #697BFF;
+    opacity: 1;
+}
+
+div.food-category a img {
+    width: 18%;
+}
+
+.menu-options-label {
+    width: 85%;
+    margin-top: 5%;
+    font-size: 2em;: ;
+}
+
+.menu-options-container {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.menu-options {
+    width: 350px;
+    height: 280px;
+    border: 1px solid #EDEEF2;
+    border-radius: 16px;
+    overflow: clip;
+}
+
+div.menu-options img {
+    width: 100%;
+    height: 55%;
+}
+
+.menu-option-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+div.menu-option-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 24px;
+    border: 1px solid #EDEEF2;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+
+div.menu-option-information h2 {
+    font-size: 1.3em;
+}
+
+div.menu-option-information span {
+    color: #83859C;
+    font-size: 14px;
+}
+
+.menu-options-category-container {
+    display: flex;
+    gap: 10px;
+}
+
+div.menu-option-category img {
+    width: 12px;
+    margin-right: 3px;
+}
+
+/* To make somehow images static from this moment*/
+@media (max-width: 1170px) {
+    .discount-container {
+        min-width: 880px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .food-category a {
+
+    }
 }
