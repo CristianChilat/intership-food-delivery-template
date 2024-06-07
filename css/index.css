@@ -20,19 +20,19 @@ body a:hover {
     opacity: 0.75;
 }
 
-div.login-side {
+.login-side {
     padding: 0 10%;
     min-width: 25em;
 }
 
-div.login-side div.login-side-container {
+.login-side .login-side-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.login-side div div.icon-container {
+.login-side div .icon-container {
     width: 79px;
     position: relative;
     top: 20px;
@@ -69,7 +69,7 @@ div.login-side div.login-side-container {
     margin-bottom: 1em;
 }
 
-div.input-container input {
+.input-container input {
     width: 100%;
     height: 40px;
     border-radius: 8px;
@@ -83,17 +83,17 @@ div.input-container input {
     margin-top: 16px;
 }
 
-div.remember-me {
+.remember-me {
     display: flex;
     align-items: center;
 }
 
-div.remember-me input {
+.remember-me input {
     height: 1.5em;
     width: 1.5em;
 }
 
-div.remember-me label {
+.remember-me label {
     margin-left: 12px;
     font-size: 1.1em;
 }
@@ -114,7 +114,7 @@ div.remember-me label {
     cursor: pointer;
 }
 
-div.signup-container {
+.signup-container {
     padding-bottom: 40px;
     margin: 0 auto;
     text-align: center;

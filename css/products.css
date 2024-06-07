@@ -5,25 +5,49 @@
     margin: 0;
 }
 
-main {
-    width: 95%;
+html {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    width: 75%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #EDEEF2;
+    margin-bottom: 2em;
+}
+
+
 nav {
-    margin-bottom: 40px;
+    width: 75%;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    border-bottom: 1px solid #EDEEF2;
     padding-bottom: 10px;
 }
 
 .left-side-navbar {
     display: flex;
-    margin-left: 220px;
     align-items: center;
     gap: 50px;
 }
@@ -85,7 +109,6 @@ nav {
 
 .right-side-navbar {
     display: flex;
-    margin-right: 220px;
     margin-left: 10px;
     align-items: center;
     gap: 20px;
@@ -140,15 +163,9 @@ a:hover {
     opacity: 0.75;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    min-width: 1170px;
-}
-
 section {
-    width: 80%;
-    min-width: 940px;
+    width: 100%;
+    min-width: 877px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,10 +175,10 @@ section {
     display: flex;
     justify-content: space-between;
     height: auto;
+    width: 100%;
 }
 
 .left-image-discount {
-    margin-left: 30px;
     border-radius: 16px;
     border: 1px solid #efefef;
     width: 45%;
@@ -169,7 +186,6 @@ section {
 }
 
 .right-image-discount {
-    margin-right: 30px;
     border-radius: 16px;
     border: 1px solid #eaeaea;
     width: 45%;
@@ -179,7 +195,7 @@ section {
 .food-category-container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -212,14 +228,16 @@ div.food-category a img {
 }
 
 .menu-options-label {
-    width: 85%;
+    width: 100%;
     margin-top: 5%;
     font-size: 2em;: ;
 }
 
 .menu-options-container {
-    display: flex;
-    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    min-width: 792px;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
@@ -227,20 +245,20 @@ div.food-category a img {
     margin-top: 25px;
 }
 
-.menu-options:hover {
+.menu-option:hover {
     opacity: 85%;
     cursor: pointer;
 }
 
-.menu-options {
-    width: 350px;
-    height: 280px;
+.menu-option {
+    min-width: 50px;
+    min-height: 80px;
     border: 1px solid #EDEEF2;
     border-radius: 16px;
     overflow: clip;
 }
 
-div.menu-options img {
+div.menu-option img {
     width: 100%;
     height: 55%;
 }
@@ -283,15 +301,37 @@ div.menu-option-category img {
     margin-right: 3px;
 }
 
-/* To make somehow images static from this moment*/
-@media (max-width: 1170px) {
+@media (max-width: 1180px) {
     .discount-container {
-        min-width: 880px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .food-category-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+
+    .menu-options-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-option {
+        width: 100%;
+        height: 100%;
     }
 }
 
-@media (max-width: 1600px) {
-    .food-category a {
-
-    }
-}
