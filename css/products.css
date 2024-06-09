@@ -15,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
@@ -56,6 +55,11 @@ nav {
     width: 79px;
     position: relative;
     top: 5px;
+}
+
+.icon-container a {
+    display: block;
+    width: 5em;
 }
 
 .icon {
@@ -141,7 +145,10 @@ div.cart-button img {
     width: 56px;
     border-radius: 16px;
     border: 1px solid #bcbcbc;
+}
 
+#divider-showed {
+    display: none;
 }
 
 div.profile-button img {
@@ -209,7 +216,7 @@ section {
     min-width: 130px;
     width: 95%;
     height: 80px;
-    border: 1px solid #EDEEF2;
+    border: 1px solid #d6d6da;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -269,6 +276,7 @@ div.menu-option img {
     justify-content: space-between;
     margin-top: 5px;
     margin-left: 10px;
+    height: 6em;
 }
 
 div.menu-option-category {
@@ -277,8 +285,9 @@ div.menu-option-category {
     align-items: center;
     width: 70px;
     height: 24px;
-    border: 1px solid #EDEEF2;
+    background-color: #EDEEF2;
     margin-top: 20px;
+    margin-bottom: 5px;
     border-radius: 16px;
 }
 
@@ -287,8 +296,8 @@ div.menu-option-information h2 {
 }
 
 div.menu-option-information span {
-    color: #83859C;
     font-size: 14px;
+    color:  #83859C;
 }
 
 .menu-options-category-container {
@@ -302,11 +311,118 @@ div.menu-option-category img {
 }
 
 @media (max-width: 1180px) {
+    nav {
+        width: 90%;
+    }
+
+    .left-side-navbar {
+        width: 11em;
+    }
+
+    icon-container {
+        height: 90%;
+        width: 45%;
+    }
+
+    .search-input-container {
+        display: none;
+    }
+
+    .icon-container a {
+        width: 12em !important;
+    }
+
+    .icon-container a h2{
+        width: 4em;
+        font-size: 3em;
+    }
+
+    .right-side-navbar {
+        height: 200px;
+    }
+
+    .cart-button {
+        height: 100%;
+    }
+
+    #restaurants {
+        display: none;
+    }
+
+    #deals {
+        display: none;
+    }
+
+    #my-order {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .cart-button {
+        height: 7em;
+        width: 7em;
+        border-radius: 30%;
+    }
+
+    .cart-button img {
+        width: 70%;
+        height: 70% !important;
+        left: 18px !important;
+    }
+
+    .profile-button {
+        height: 7em;
+        width: 7em;
+        border-radius: 30%;
+    }
+
+    .profile-button img {
+        height: auto !important;
+        width: 200px !important;
+        bottom: 70px !important;
+        right: 40px !important;
+    }
+
+    #divider-showed {
+        display: block;
+        height: 7em;
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        height: 7em;
+        width: 7em;
+        background-color: #F3F4FF;
+        border-radius: 30%;
+        border: 1px solid #d8d8d8;
+    }
+
+    .button-line-icon {
+        width: 40%;
+        background-color: #83859C;
+        height: 4px;
+    }
+
     .discount-container {
         flex-direction: column;
         align-items: center;
         gap: 50px;
         width: 100%;
+    }
+
+    .right-image-discount {
+        width: 90%;
+    }
+
+    .left-image-discount {
+        width: 90%;
     }
 
     main {
@@ -317,21 +433,73 @@ div.menu-option-category img {
         width: 100%;
     }
 
+    .menu-options-label {
+        font-size: 3em;
+    }
+
     .food-category-container {
         display: grid;
         grid-template-columns: auto auto auto;
+        width: 90%;
+        row-gap: 2em;
     }
 
+    .food-category {
+        width: 15em;
+        height: 10em;
+    }
+
+    .food-category a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .food-category a img {
+        width: 25% !important;
+        margin: 10px;
+    }
+
+    .food-category a span {
+        font-size: 1.5em;
+    }
 
     .menu-options-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+    }
+
+    .menu-options-label {
+        width: 90%;
     }
 
     .menu-option {
         width: 100%;
-        height: 100%;
+        border-radius: 40px !important;
     }
+
+    .menu-option-information {
+        height: 40%;
+    }
+
+    .menu-option-information h2 {
+        font-size: 3em !important;
+    }
+
+    .menu-option-information span {
+        font-size: 1.5em !important;
+    }
+
+    .menu-option-category {
+        width: 6em !important;
+        height: 2em !important;
+        padding: 5px 10px;
+    }
+
+    .menu-option-category img {
+        width: 30% !important;
+        height: 100% !important;
+    }
+
 }
 
