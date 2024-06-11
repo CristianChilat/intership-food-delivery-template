@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-container">
+
+                <div class="left-side-navbar">
+
+                    <div class="icon-container">
+                        <a href="index.html">
+                            <h2 class="icon ">Food</h2>
+                            <h2 class="icon icon-blue">delivery</h2>
+                        </a>
+                    </div>
+
+                    <div class="search-input-container">
+                            <input placeholder="Search" type="text">
+                        <a href="#">
+                            <img src="images/searchIcon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right-side-navbar">
+                    <a id="restaurants" href="products.html">Restaurants</a>
+                    <a id="deals" href="#">Deals</a>
+                    <div class="divider"></div>
+                    <a id="my-order" href="#">My orders</a>
+                    <a href="#">
+                        <div class="cart-button">
+                            <img src="images/shoppingCartIcon.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="profile-button">
+                            <img src="images/profilePicture.png" alt="">
+                        </div>
+                    </a>
+                    <div id="divider-none" class="divider"></div>
+                    <a href="#">
+                        <div class="menu-button">
+                            <div class="button-line-icon"></div>
+                            <div class="button-line-icon"></div>
+                            <div class="button-line-icon"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="profile-settings-container">
+                <h1>Settings</h1>
+                <div class="profile-setting">
+                    <div class="profile-setting-image">
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h4>Account</h4>
+                        <span>Personal information</span>
+                    </div>
+                </div>
+                <div class="profile-setting">
+                    <div class="profile-setting-image">
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <span>Shippings addresses</span>
+                    </div>
+                </div>
+                <div class="profile-setting">
+                    <div class="profile-setting-image">
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h4>Payment method</h4>
+                        <span>Connected credit cards</span>
+                    </div>
+                </div>
+                <div class="profile-setting">
+                    <div class="profile-setting-image">
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h4>Security</h4>
+                        <span>Password, 2FA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="account-information-container">
+                <div class="account-information">
+                    <h3>Personal information</h3>
+                    <form action="">
+                        <div class="profile-image-container">
+                            <div>
+                                <span>Avatar</span>
+                                <div class="profile-image">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <button id="change-button" type="button">Change</button>
+                            <button id="remove-button" type="button">Remove</button>
+                        </div>
+                        <div class="account-inputs-container">
+                            <div>
+                                <label for="first-name">First name</label>
+                                <input value="Jane" id="first-name" type="text">
+                            </div>
+                            <div>
+                                <label for="last-name">Last name</label>
+                                <input value="Robertson" id="last-name" type="text">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input value="jane.robertson@example.com" id="email" type="email">
+                            </div>
+                            <div>
+                                <label for="phone-number">Phone number</label>
+                                <input value="(217) 555-0113" id="phone-number" type="tel">
+                            </div>
+                        </div>
+                        <div class="email-notifications-container">
+                            <h3>Email notifications</h3>
+                            <div class="email-notifications-options">
+                                <div>
+                                    <label for="new-deals">New deals</label>
+                                    <input id="new-deals" type="checkbox">
+                                </div>
+                                <div>
+                                    <label for="password-changes">Password changes</label>
+                                    <input id="password-changes" type="checkbox">
+                                </div>
+                                <div>
+                                    <label for="new-restaurants">New restaurants</label>
+                                    <input id="new-restaurants" type="checkbox">
+                                </div>
+                                <div>
+                                    <label for="special-offers">Special offers</label>
+                                    <input id="special-offers" type="checkbox">
+                                </div>
+                                <div>
+                                    <label for="order-statuses">Order statuses</label>
+                                    <input id="order-statuses" type="checkbox">
+                                </div>
+                                <div>
+                                    <label for="news-letter">News letter</label>
+                                    <input id="news-letter" type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="account-interactions-container">
+                    <div>
+                        <button id="log-out" type="submit">Log out</button>
+                    </div>
+                    <div>
+                        <button id="discard-changes" type="submit">Discard Changes</button>
+                        <button id="save-changes" type="submit">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
