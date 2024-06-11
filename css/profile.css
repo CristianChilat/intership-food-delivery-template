@@ -221,7 +221,6 @@ section {
 .profile-image-container {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 30px;
     margin-top: 2em;
     margin-bottom: 1em;
