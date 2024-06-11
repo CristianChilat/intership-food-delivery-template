@@ -144,6 +144,7 @@ div.profile-button img {
 
 button:hover {
     opacity: 60%;
+    cursor: pointer;
 }
 
 a {
@@ -177,6 +178,16 @@ section {
     width: 40%;
 }
 
+.profile-setting:hover {
+    background-color: #F3F4FF;
+    border: 2px solid #4E60FF;
+}
+
+.profile-setting:hover .profile-setting-image {
+    background-color: #4E60FF;
+}
+
+
 .profile-setting {
     display: flex;
     align-items: center;
@@ -190,7 +201,7 @@ section {
 .profile-setting-image {
     min-width: 50px;
     min-height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     margin-left: 10px;
 }
@@ -235,11 +246,21 @@ section {
     width: 7em;
 }
 
+#change-button:hover {
+    background-color: #F3F4FF;
+}
+
 #remove-button {
     border: none;
     opacity: 60%;
     height: 3em;
     width: 7em;
+}
+
+#remove-button:hover {
+    border: 1px solid #ff0004;
+    border-radius: 8px;
+    background-color: #ff474b;
 }
 
 .account-inputs-container {
@@ -328,8 +349,105 @@ section {
     width: 8em;
 }
 
-@media (max-width: 985px) {
-    * {
-        min-width: inherit;
+
+
+@media (max-width: 1000px) {
+    nav {
+        width: 90%;
+    }
+
+    .left-side-navbar {
+        width: 11em;
+    }
+
+    icon-container {
+        height: 90%;
+        width: 45%;
+    }
+
+    .search-input-container {
+        display: none;
+    }
+
+    .icon-container a {
+        width: 12em !important;
+    }
+
+    .icon-container a h2{
+        width: 4em;
+        font-size: 3em;
+    }
+
+    .right-side-navbar {
+        height: 200px;
+    }
+
+    .cart-button {
+        height: 100%;
+    }
+
+    #restaurants {
+        display: none;
+    }
+
+    #deals {
+        display: none;
+    }
+
+    #my-order {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .cart-button {
+        height: 7em;
+        width: 7em;
+        border-radius: 30%;
+    }
+
+    .cart-button img {
+        width: 70%;
+        height: 70% !important;
+        left: 18px !important;
+    }
+
+    .profile-button {
+        height: 7em;
+        width: 7em;
+        border-radius: 30%;
+    }
+
+    .profile-button img {
+        height: auto !important;
+        width: 200px !important;
+        bottom: 70px !important;
+        right: 40px !important;
+    }
+
+    #divider-showed {
+        display: block;
+        height: 7em;
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        height: 7em;
+        width: 7em;
+        background-color: #F3F4FF;
+        border-radius: 30%;
+        border: 1px solid #d8d8d8;
+    }
+
+    .button-line-icon {
+        width: 40%;
+        background-color: #83859C;
+        height: 4px;
     }
 }
