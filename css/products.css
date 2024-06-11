@@ -88,18 +88,36 @@ nav {
     padding-left: 10px;
 }
 
+.search-input-container {
+    background-color: #EDEEF2;
+    width: 200px;
+    height: 2.5em;
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+}
+
+.left-side-navbar div input {
+    width: 73%;
+    height: 2em;
+    border-radius: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+}
+
 .search-input-container a {
     background-color: #f7f8fb;
     border-radius: 50%;
-    width: 1.6em;
-    height: 1.6em;
+    width: 2em;
+    height: 2em;
     position: relative;
-    left: 15px;
+    left: 7px;
 }
 
 .search-input-container  a img {
-    height: 1.1em;
-    width: 1.1em;
+    height: 1.5em;
+    width: 1.5em;
     position: relative;
     top: 4px;
     left: 4px;
