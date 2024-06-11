@@ -201,11 +201,20 @@ section {
 }
 
 .profile-setting-image {
-    min-width: 3.2em;
-    min-height: 3.2em;
+    display: flex;
+    width: 3.2em;
+    height: 3.2em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-setting-image img {
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .account-information-container {
@@ -234,6 +243,18 @@ section {
     border: 1px solid black;
     border-radius: 16px;
     margin-top: 0.5em;
+}
+
+.profile-image {
+    overflow: hidden;s
+}
+
+.profile-image img {
+    position: relative;
+    bottom: 2em;
+    right: 1em;
+    width: 8em;
+
 }
 
 .profile-image-container button {
