@@ -199,8 +199,8 @@ section {
 }
 
 .profile-setting-image {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 3.2em;
+    min-height: 3.2em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     margin-left: 10px;
@@ -210,7 +210,7 @@ section {
     border: 1px solid #EDEEF2;
     border-radius: 16px;
     width: 100%;
-    min-height: 700px;
+    min-height: 43.75em;
     margin-bottom: 2em;
 }
 
@@ -221,14 +221,15 @@ section {
 .profile-image-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     margin-top: 2em;
     margin-bottom: 1em;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 6.3em;
+    height: 6.3em;
     border: 1px solid black;
     border-radius: 16px;
     margin-top: 0.5em;
@@ -449,5 +450,94 @@ section {
         width: 40%;
         background-color: #83859C;
         height: 4px;
+    }
+
+    main {
+        width: 90%;
+        font-size: 2em;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .profile-settings-container {
+        width: 100%;
+    }
+
+    .profile-setting {
+        width: 100%;
+        gap: 40px;
+    }
+
+    #change-button {
+        width: 50%;
+        font-size: 1em;
+        border-radius: 25px;
+    }
+
+    #remove-button {
+        width: 50%;
+        font-size: 1em;
+    }
+
+    #remove-button:hover {
+        border-radius: 25px;
+    }
+
+    .account-inputs-container {
+        grid-template-columns: auto;
+    }
+
+    .account-inputs-container div input {
+        height: 3em;
+        font-size: 0.9em;
+    }
+
+    .email-notifications-options {
+        grid-template-columns: auto;
+        gap: 2em;
+    }
+
+    .email-notifications-options div {
+        align-items: center;
+    }
+
+    #log-out {
+        width: 100%;
+    }
+
+    #discard-changes {
+        width: 50%;
+    }
+
+    #save-changes {
+        width: 50%;
+    }
+
+    .account-interactions-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .account-interactions-container div {
+        width: 20em;
+        height: 2em;
+    }
+
+    .account-interactions-container div button {
+        height: 100%;
+        font-size: 1em;
+    }
+
+    .account-interactions-container {
+        min-height: 8em;
+    }
+
+    .email-notifications-options div input {
+        height: 3em;
+        width: 3em;
     }
 }
