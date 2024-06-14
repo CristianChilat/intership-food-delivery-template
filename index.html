@@ -30,15 +30,17 @@
                         <div class="input-container">
 
                             <label for="email">Email</label>
-                            <input id="email" placeholder="name@example.com" type="text"/>
+                            <input id="email" placeholder="name@example.com"  type="email" required/>
                         </div>
                         <div class="input-container">
                             <label for="password">Password</label>
-                            <input placeholder="min. 8 characters" id="password" type="password"/>
+                            <input  placeholder="min. 8 characters" minlength="8" id="password" type="password" required/>
+                            <img class="show-password" src="images/view.png" alt="">
                         </div>
 
                         <div class="remember-me">
-                            <input id="remember-me" type="checkbox"/><label for="remember-me">Keep me logged in</label>
+                            <input id="remember-me" type="checkbox"/>
+                            <label for="remember-me">Keep me logged in</label>
                         </div>
 
                         <button type="submit" class="login-button">Login</button>

@@ -166,9 +166,6 @@ body {
 
 main {
     width: 75%;
-}
-
-section {
     display: flex;
     gap: 30px;
 }
@@ -187,6 +184,10 @@ section {
 
 .profile-setting:hover .profile-setting-image {
     background-color: #4E60FF;
+}
+
+.profile-setting:hover svg {
+    stroke: white;
 }
 
 
@@ -212,9 +213,10 @@ section {
     overflow: hidden;
 }
 
-.profile-setting-image img {
-    width: 2.5em;
-    height: 2.5em;
+.profile-setting-image svg {
+    width: 2em;
+    height: 2em;
+    stroke: #83859C;
 }
 
 .account-information-container {
@@ -356,6 +358,9 @@ section {
 
 #log-out {
     border: 1px solid #FF5C60;
+}
+
+#log-out-button {
     color: #FF5C60;
 }
 
@@ -477,9 +482,6 @@ section {
     main {
         width: 90%;
         font-size: 2em;
-    }
-
-    section {
         flex-direction: column;
     }
 

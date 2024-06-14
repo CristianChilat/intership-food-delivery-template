@@ -20,6 +20,9 @@ body {
 main {
     display: flex;
     width: 75%;
+    min-width: 877px;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -188,14 +191,12 @@ a:hover {
 
 section {
     width: 100%;
-    min-width: 877px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 .discount-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: auto;
     width: 100%;
@@ -217,6 +218,7 @@ section {
 
 .food-category-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin-top: 50px;
